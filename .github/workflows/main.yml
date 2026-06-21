@@ -6,7 +6,7 @@ on:
 jobs:
   cicd_job:
     name: build and deploy to eks
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
