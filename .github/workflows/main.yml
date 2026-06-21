@@ -22,7 +22,8 @@ jobs:
     - name: Confirm AWS account
       run: aws sts get-caller-identity
 
-    - name: login-ecr
+    - name: Login to ECR
+      id: login-ecr
       uses: aws-actions/amazon-ecr-login@v2
 
     - name: build,tag,push docker image to ECR
