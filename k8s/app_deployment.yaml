@@ -29,9 +29,9 @@ metadata:
   name: pacman-service
   labels:
     app: pacman
-annotations:
-  service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: ip
-  service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-nlb-target-type: ip
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
 spec:
   type: LoadBalancer
   selector:
